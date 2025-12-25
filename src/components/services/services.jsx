@@ -1,15 +1,15 @@
 import React from 'react'
 import './services.css'
-import service1 from '../../assets/program-1.png'
-import service2 from '../../assets/program-2.png'
-import service3 from '../../assets/program-3.png'
-import service1Icon from '../../assets/program-icon-1.png'
-import service2Icon from '../../assets/program-icon-2.png'
-import service3Icon from '../../assets/program-icon-3.png'
+import service1 from '../../assets/program-1.jpg'
+import service2 from '../../assets/program-2.jpg'
+import service3 from '../../assets/program-3.jpg'
+import service1Icon from '../../assets/program-icon1.png'
+import service2Icon from '../../assets/program-icon2.png'
+import service3Icon from '../../assets/program-icon3.png'
 
 const Services = () => {
   return (
-    <div className='services'>
+    <div className='services' >
         <div className="service1">
             <img src={service1} alt=""/> 
             <div className="caption">

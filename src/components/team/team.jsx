@@ -1,12 +1,12 @@
 import React from 'react'
 import './team.css'
-import adlina from '../../assets/program-1.png'
-import auni from '../../assets/program-2.png'
-import insyirah from '../../assets/program-3.png'
+import adlina from '../../assets/program-1.jpg'
+import auni from '../../assets/program-2.jpg'
+import insyirah from '../../assets/program-3.jpg'
 
 const Team = () => {
   return (
-    <div className='team-section'>
+    <div className='team-section' >
         <div className="member">
             <img src={adlina} alt="Adlina"/> 
             <div className="caption">
