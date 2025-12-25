@@ -68,3 +68,27 @@
     display: block;
     margin: 20px 0;
 }
+
+.contact-col button.dark-btn {
+    background: #000080; 
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.contact-col button.dark-btn:hover {
+    background: #000060; 
+    transform: scale(1.05);
+}
+
+.contact-col button.dark-btn img {
+    width: 20px;
+}
