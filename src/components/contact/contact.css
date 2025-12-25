@@ -92,3 +92,13 @@
 .contact-col button.dark-btn img {
     width: 20px;
 }
+
+/*media query*/
+@media (max-width : 700px){
+    .contact{
+        display: block;
+    }
+    .contact-col{
+        padding: 20px;
+    }
+}

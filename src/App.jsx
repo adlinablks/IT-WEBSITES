@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './components/navbar/navbar'
 import Members from './components/members/members'
 import Services from './components/services/services'
@@ -8,8 +8,14 @@ import About from './components/about/about'
 import Team from'./components/team/team'
 import Contact from './components/contact/contact'
 import Footer from './components/footer/footer'
+import Media from './components/media/media'
 
 const App = () => {
+
+  const[playState, setPlayState] =useState(false);
+
+
+
   return (
     <div>
       <Navbar />
@@ -20,7 +26,7 @@ const App = () => {
           <Services/>
         </div>
         <div id='about'>
-          <About/>
+          <About setPlayState= {setPlayState}/>
         </div>
         <div id='team-section'>
           <Title subtitle='Our Member' title='Lets get to know us'/>
@@ -32,6 +38,7 @@ const App = () => {
         </div>
         <Footer/>
       </div>
+      <Media playState={playState} setPlayState={setPlayState}/>
     </div>
   )
 }

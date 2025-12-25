@@ -25,3 +25,35 @@
     margin: 10px auto 20px; 
     line-height: 1.4; 
 }
+
+/*media query*/
+
+@media(max-width:850px){
+    .members-text h1{
+        font-size: 40px;
+    }
+}
+@media(max-width:650px){
+    .members-text h1{
+        font-size: 30px;
+        max-width: 400px;
+        margin: auto;
+    }
+    .members-text p{
+        font-size: 14px;
+        margin: 15px;
+    }
+}
+
+/*media query*/
+
+@media(max-width: 650px){
+    .members{
+        flex-direction: column;
+    }
+
+    .member{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}
