@@ -13,7 +13,15 @@ nav{
 }
 
 .logo{
-    width: 70px; 
+    width: 120px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 20px;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 
 nav ul li{
@@ -67,7 +75,8 @@ nav ul li{
     }
 
     .logo{
-        width: 50px;
+        width: 80px;
+        margin-left: 0;
     }
 
     .menuicon{
