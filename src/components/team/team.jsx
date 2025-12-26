@@ -14,7 +14,7 @@ const Team = () => {
                 <ul>
                     <li>Web & Digital Solutions Developer</li>
                     <li>Design, develop, and maintain responsive websites</li>
-                    <li>Implement modern UI?UX practices to enhance user experience</li>
+                    <li>Implement modern UI/UX practices to enhance user experience</li>
                 </ul>
             </div>
         </div>

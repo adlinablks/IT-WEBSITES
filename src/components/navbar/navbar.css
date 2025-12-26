@@ -69,7 +69,8 @@ nav ul li{
         width: 30px;
         cursor: pointer;
     }
-    .hidemobilemnenu{
+    
+    .hidemobilemenu{
         right: -200px;
     }
 }
