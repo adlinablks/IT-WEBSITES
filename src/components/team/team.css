@@ -48,3 +48,32 @@
     opacity: 1;
     padding-top: 0;
 }
+
+/*media query*/
+
+@media(max-width: 650px){
+    .members{
+        flex-direction: column;
+    }
+
+    .member{
+        flex-basis: 100%;
+        margin: 20px 0;
+    }
+    
+    .caption{
+        padding: 20px 15px;
+    }
+    
+    .caption h3{
+        font-size: 16px;
+    }
+    
+    .caption p{
+        font-size: 12px;
+    }
+    
+    .caption ul li{
+        font-size: 11px;
+    }
+}
