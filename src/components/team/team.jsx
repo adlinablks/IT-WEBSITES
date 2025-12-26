@@ -24,7 +24,7 @@ const Team = () => {
             <div className="caption">
                 <p>Nur Insyirah Binti Mohamad Azmi</p>
                 <ul>
-                    <li>CYbersecurity & SYstems Maintenance Specialist</li>
+                    <li>Cybersecurity & Systems Maintenance Specialist</li>
                     <li>Implement and monitor cybersecurity measures to protect systems and data</li>
                     <li>Respond to security incidents and provide preventive solutions</li>       
                 </ul>
