@@ -2,7 +2,7 @@ nav{
     width: 100%;
     /*background: #333;*/
     color: #fff;
-    padding: 5px 0;  
+    padding: 10px 0; 
     position: fixed;
     top: 0;
     left: 0;
@@ -13,13 +13,13 @@ nav{
 }
 
 .logo{
-    width: 100px; /* Enlarged from 70px */
-    cursor: pointer; /* Shows it's clickable */
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    width: 80px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .logo:hover{
-    transform: scale(1.05); /* Slight zoom on hover */
+    transform: scale(1.05);
 }
 
 nav ul li{
@@ -43,7 +43,7 @@ nav ul li{
 
 @media (max-width: 1000px){
     .logo{
-        width: 160px; /* Enlarged from 140px */
+        width: 130px;
     }
     nav ul li{
         margin: 10px 15px;
@@ -52,7 +52,7 @@ nav ul li{
 
 @media (max-width: 840px){
     nav{
-        padding: 10px 20px;
+        padding: 8px 20px; 
     }
     nav ul {
         position:fixed;
@@ -73,7 +73,7 @@ nav ul li{
     }
 
     .logo{
-        width: 70px; /* Enlarged from 50px */
+        width: 60px; 
     }
 
     .menuicon{
