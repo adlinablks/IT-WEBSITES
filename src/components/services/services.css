@@ -4,18 +4,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .service1 img{
     width: 100%;
     border-radius: 10px;
     display: block;
-
 }
 
 .service1 {
-    flex-basis : 31%;
+    flex-basis: 31%;
     position: relative;
+    overflow: hidden;
 }
 
 .caption{
@@ -25,7 +26,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,15,152,0.3);
+    background: rgba(0,15,152,0.95);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,19 +34,56 @@
     color: white;
     cursor: pointer;
     opacity: 0;
-    padding-top: 70%;
+    padding: 30px 20px;
     transition: 0.4s;
+    overflow-y: auto;
 }
 
-
 .caption img{
-    width: 60px;
+    width: 50px;
     margin-bottom: 10px;
+}
+
+.caption h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.caption p{
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.caption ul{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.caption ul li{
+    font-size: 12px;
+    margin: 6px 0;
+    padding-left: 18px;
+    position: relative;
+    text-align: left;
+}
+
+.caption ul li:before{
+    content: "->";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-weight: bold;
 }
 
 .service1:hover .caption{
     opacity: 1;
-    padding-top: 0;
+    padding-top: 20px;
 }
 
 /*media query*/
@@ -55,8 +93,24 @@
         flex-direction: column;
     }
 
-    .service{
+    .service1{
         flex-basis: 100%;
-        margin: 20px;
+        margin: 20px 0;
+    }
+    
+    .caption{
+        padding: 20px 15px;
+    }
+    
+    .caption h3{
+        font-size: 16px;
+    }
+    
+    .caption p{
+        font-size: 12px;
+    }
+    
+    .caption ul li{
+        font-size: 11px;
     }
 }

@@ -30,20 +30,10 @@ const Navbar = () => {
         <li><Link to='services' smooth offset={-120} duration={500}>Services</Link></li>
         <li><Link to='about' smooth offset={-120} duration={500}>About us</Link></li>
         <li><Link to='team-section' smooth offset={-120} duration={500}>Team Members</Link></li>
-        <li><Link to='media' smooth offset={0} duration={500}>Media</Link></li>
-        <li>
-          <Link to='contact' smooth offset={-120} duration={500} className='btn'>
-            Contact us
-          </Link>
-        </li>
+        <li><Link to='contact' smooth offset={-120} duration={500} className='btn'>Contact us</Link></li>
       </ul>
 
-      <img
-        src={menuicon}
-        alt="Menu"
-        className='menuicon'
-        onClick={toggleMenu}
-      />
+      <img src={menuicon} alt="Menu" className='menuicon' onClick={toggleMenu}/>
     </nav>
   )
 }

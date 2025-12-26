@@ -13,11 +13,7 @@ const Media = ({ playState, setPlayState }) => {
   };
 
   return (
-    <div
-      className={`media ${playState ? '' : 'hide'}`}
-      ref={player}
-      onClick={closePlayer}
-    >
+    <div className={`media ${playState ? '' : 'hide'}`} ref={player} onClick={closePlayer} >
       <video src={video} autoPlay muted controls></video>
     </div>
   );
