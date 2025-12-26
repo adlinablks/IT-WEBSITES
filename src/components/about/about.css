@@ -65,7 +65,6 @@
     box-shadow: 0 0 0 12px rgba(33, 46, 160, 0.5);
 }
 
-/* Add pulsing animation to attract attention */
 @keyframes pulse {
     0%, 100% {
         transform: translate(-50%, -50%) scale(1);
