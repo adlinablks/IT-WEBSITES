@@ -35,10 +35,10 @@ const App = () => {
         <div id='contact'>
           <Title subtitle='Contact us' title='Get in touch!'/>
           <Contact/>
-        </div>
-        <Footer/>
       </div>
       <Media playState={playState} setPlayState={setPlayState}/>
+    </div>
+      <Footer/>
     </div>
   )
 }

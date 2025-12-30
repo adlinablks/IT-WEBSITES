@@ -1,8 +1,7 @@
 nav{
     width: 100%;
-    /*background: #333;*/
     color: #fff;
-    padding: 10px 0; 
+    padding: 15px 40px; 
     position: fixed;
     top: 0;
     left: 0;
@@ -10,79 +9,174 @@ nav{
     align-items: center;
     justify-content: space-between;
     z-index: 15;
+    backdrop-filter: blur(10px);
+    background: rgba(33, 46, 160, 0.05);
+    transition: all 0.3s ease;
 }
 
 .logo{
-    width: 80px;
+    width: 90px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
 }
 
 .logo:hover{
-    transform: scale(1.05);
+    transform: scale(1.08) translateY(-2px);
+    filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.3));
 }
 
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 3px 12px;  
-    font-size: 13px;  
+    margin: 0 18px;  
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+nav ul li a:hover{
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(90deg, #e0c3fc, #8ec5fc);
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover::after{
+    transform: translateX(-50%) scaleX(1);
 }
 
 .dark-nav{
-    background: #212EA0;
-    transition: 0.5s;
+    background: #1b3461;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    backdrop-filter: blur(15px);
 }
 
 .menuicon{
     display: none;
+    transition: transform 0.3s ease;
+}
+
+.menuicon:hover{
+    transform: rotate(90deg);
 }
 
 
 /*media query*/
 
 @media (max-width: 1000px){
+    nav{
+        padding: 12px 30px;
+    }
     .logo{
-        width: 130px;
+        width: 85px;
     }
     nav ul li{
-        margin: 10px 15px;
+        margin: 0 15px;
+        font-size: 15px;
     }
 }
 
 @media (max-width: 840px){
     nav{
-        padding: 8px 20px; 
+        padding: 12px 25px; 
     }
     nav ul {
-        position:fixed;
+        position: fixed;
         top: 0;
         bottom: 0;
-        right:0px;
-        background: #212EA0;
-        z-index:-1;
-        width: 160px;
-        padding-top: 60px;
-        transition: 0.5s;
+        right: 0px;
+        background: linear-gradient(135deg, rgba(33, 46, 160, 0.98), rgba(88, 28, 135, 0.98));
+        backdrop-filter: blur(20px);
+        z-index: -1;
+        width: 200px;
+        padding-top: 80px;
+        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.3);
     }
 
     nav ul li{
         display: block;
-        margin: 20px 30px;
-        font-size: 12px;
+        margin: 25px 0;
+        padding: 0 35px;
+        font-size: 17px;
+        opacity: 0;
+        animation: fadeInMenu 0.5s ease forwards;
+    }
+
+    nav ul li:nth-child(1) { animation-delay: 0.1s; }
+    nav ul li:nth-child(2) { animation-delay: 0.2s; }
+    nav ul li:nth-child(3) { animation-delay: 0.3s; }
+    nav ul li:nth-child(4) { animation-delay: 0.4s; }
+    nav ul li:nth-child(5) { animation-delay: 0.5s; }
+
+    @keyframes fadeInMenu {
+        to {
+            opacity: 1;
+        }
+    }
+
+    nav ul li a{
+        font-size: 17px;
+        padding: 10px 15px;
+        display: block;
+        border-left: 3px solid transparent;
+        transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover{
+        background: rgba(255, 255, 255, 0.1);
+        border-left-color: #8ec5fc;
+        padding-left: 20px;
     }
 
     .logo{
-        width: 60px; 
+        width: 70px; 
     }
 
     .menuicon{
         display: block;
-        width: 25px;
+        width: 28px;
         cursor: pointer;
     }
     
     .hidemobilemenu{
-        right: -160px;
+        right: -200px;
+    }
+}
+
+@media (max-width: 480px){
+    nav{
+        padding: 10px 20px;
+    }
+    .logo{
+        width: 60px;
+    }
+    nav ul{
+        width: 180px;
+    }
+    .hidemobilemenu{
+        right: -180px;
     }
 }
