@@ -1,10 +1,44 @@
 .team-section{
-    margin: 80px auto;
-    width: 90%;
+    margin: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 25px;
+    position: relative;
+    z-index: 0;
+    padding: 36px 0 36px; /* restore top padding so team content is spaced from above */
+}
+
+.team-section::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    transform: translateX(-50%);
+    background: transparent; /* moved band to #team-section so title and cards share it */
+    z-index: -1;
+}
+
+/* full-bleed band for the whole team area including Title */
+#team-section{
+    position: relative;
+    z-index: 0;
+    padding: 40px 0 40px; /* restore generous padding for title and content */
+}
+
+#team-section::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    transform: translateX(-50%);
+    background: #E6EDF5; 
+    z-index: -1;
 }
 
 .member img{

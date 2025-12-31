@@ -13,6 +13,9 @@
     box-sizing: border-box;
 }
 
+.add{
+    padding: 5px;
+}
 .footer ul{
     display: flex;
     gap: 10px;

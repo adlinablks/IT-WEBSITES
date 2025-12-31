@@ -12,7 +12,6 @@ const About = ({ setPlayState }) => {
       </div>
 
       <div className="about-right">
-        <h3>About Us</h3>
         <div className="mission-vision">
           <div className="mission">
             <h4>Mission:</h4>

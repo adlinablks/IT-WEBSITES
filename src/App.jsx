@@ -21,21 +21,27 @@ const App = () => {
       <Navbar />
       <Members/>
       <div className="container">
+        
+        <div id='about'>
+          <Title subtitle='Our History' title='About Us' />
+          <About setPlayState= {setPlayState}/>
+        </div>
+
         <div id='services'>
           <Title subtitle='Our Services' title='What we offer'/>
           <Services/>
         </div>
-        <div id='about'>
-          <About setPlayState= {setPlayState}/>
-        </div>
+
         <div id='team-section'>
           <Title subtitle='Our Member' title='Lets get to know us'/>
           <Team/>
         </div>
+
         <div id='contact'>
           <Title subtitle='Contact us' title='Get in touch!'/>
           <Contact/>
       </div>
+      
       <Media playState={playState} setPlayState={setPlayState}/>
     </div>
       <Footer/>

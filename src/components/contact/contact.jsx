@@ -32,15 +32,17 @@ const Contact = () => {
     return (
     <div className='contact container' >
         <div className="contact-col">
-            <h3><img src={msgicon} alt="" /> Send us a message! </h3>
+            <h3><img src={msgicon} alt="" /><add>Send us a message! </add></h3>
             <p>
                 Feel free to reach out through contact form or find our contact 
                 information below. Your feedback, questions, and suggestions are 
                 important to us as we strive to provide exceptional service to our customer.
             </p>
             <ul>
-                <li> <img src={mailicon} alt="" />Email: balkisadlina@gmail.com</li>
-                <li><img src={phone} alt="" />Phone: +6011-36007067</li>
+                <li> <img src={mailicon} alt="" />
+                <a href ="mailto:balkisadlina@gmail.com">Email: balkisadlina@gmail.com</a></li>
+                <li><img src={phone} alt="" />
+                <a href="tel:+601136007067">Phone: +6011-36007067</a></li>
             </ul>
         </div>
         
@@ -52,7 +54,7 @@ const Contact = () => {
                 <input type="tel" name="phone" placeholder="Enter your mobile number" required />
                 <label>Write your message here:</label>
                 <textarea name="message" rows="6" placeholder='Enter your message' required></textarea>
-                <button type ='submit' className='btn dark-btn'>Submit Now <img src={whitearrow} alt="" /></button>
+                <button type ='submit' className='btn dark-btn'>Submit Now </button>
             </form>
             <span>{result}</span>
         </div>

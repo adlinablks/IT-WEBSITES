@@ -46,3 +46,17 @@
         font-size: 32px;
     }
 }
+
+/* Ensure title is readable on dark section backgrounds 
+#about .title,
+#about .title p,
+#about .title h2{
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #1b3461 !important;
+    color: #1b3461 !important;
+}
+
+#about .title::after{
+    background: linear-gradient(90deg, rgba(255,255,255,0.9), rgba(255,255,255,0.9));
+}*/
