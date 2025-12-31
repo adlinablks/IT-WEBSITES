@@ -1,14 +1,13 @@
 .services{
-    margin: 0; /* keep outer gap removed */
-    width: 100%; /* keep content constrained by container */
+    margin: 0; 
+    width: 100%; 
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 25px;
     position: relative;
     z-index: 0;
-    padding: 36px 0; /* restore top & bottom spacing so cards don't overlap next band */
-}
+    padding: 36px 0; }
 
 .services::before{
     content: '';
@@ -18,15 +17,14 @@
     bottom: 0;
     width: 100vw;
     transform: translateX(-50%);
-    background: transparent; /* moved band to #services so title and cards share it */
+    background: transparent; 
     z-index: -1;
 }
 
-/* full-bleed band for the whole services section including Title */
 #services{
     position: relative;
     z-index: 0;
-    padding: 40px 0 40px; /* restore bottom padding so cards have breathing room */
+    padding: 40px 0 40px; 
 }
 
 #services::before{
@@ -41,12 +39,10 @@
     z-index: -1;
 }
 
-/* Title underline color for services (use brand purple gradient on light background) */
 #services .title::after{
     background: linear-gradient(90deg, #581c87, #1e3a8a);
 }
 
-/* Service card captions keep white text when overlayed on images */
 #services .service1 .caption h3, #services .service1 .caption p,
 #services .service1 .caption ul li {
     color: #ffffff;

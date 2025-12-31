@@ -10,7 +10,6 @@
     overflow: hidden;
 }
 
-/* Semi-transparent overlay with blur */
 .members::before{
     content: '';
     position: absolute;
@@ -19,7 +18,6 @@
     z-index: 0;
 }
 
-/* ensure children sit above overlay */
 .members > *{
     position: relative;
     z-index: 1;
@@ -60,8 +58,6 @@
         margin: 15px;
     }
 }
-
-/*media query*/
 
 @media(max-width: 650px){
     .members{
