@@ -42,7 +42,7 @@ const Contact = () => {
                 <li> <img src={mailicon} alt="" />
                 <a href ="mailto:balkisadlina@gmail.com">Email: balkisadlina@gmail.com</a></li>
                 <li><img src={phone} alt="" />
-                <a href="tel:+601136007067">Phone: +6011-36007067</a></li>
+                <a href="tel:+601136007067">Phone: +6012-3456789</a></li>
             </ul>
         </div>
         
