@@ -60,3 +60,16 @@
 #about .title::after{
     background: linear-gradient(90deg, rgba(255,255,255,0.9), rgba(255,255,255,0.9));
 }*/
+
+/* Make title white only inside contact section; keep defaults elsewhere */
+#contact .title,
+#contact .title h2{
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: #ffffff !important;
+    color: #ffffff !important;
+}
+
+#contact .title::after{
+    background: linear-gradient(90deg, rgba(255,255,255,0.9), rgba(255,255,255,0.9));
+}

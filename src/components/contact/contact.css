@@ -5,6 +5,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 50px;
+    background: #1b3461;
 }
 
 .contact::before{
@@ -15,7 +16,7 @@
     bottom: 0;
     width: 100vw;
     transform: translateX(-50%);
-    background: transparent; /* moved band to #contact so title and content share it */
+    background: #1b3461; /* moved band to #contact so title and content share it */
     z-index: -1;
     box-shadow: 0 8px 30px rgba(16,24,40,0.06);
 }
@@ -36,7 +37,7 @@
     bottom: 0;
     width: 100vw;
     transform: translateX(-50%);
-    background: #F7FBFF; /* very light blue */
+    background: #1b3461;
     z-index: -1;
     box-shadow: 0 8px 30px rgba(16,24,40,0.06);
 }
@@ -52,14 +53,14 @@
 
 .contact-col{
     flex-basis: 48%;
-    color: #676767;
+    color: white;
 }
 
 .contact-col h3{
     font-size: 32px;
     margin-bottom: 20px;
     font-weight: 700;
-    background: black;
+    background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -72,7 +73,7 @@
     margin-bottom: 20px;
     font-size: 17px;
     max-width: 500px;
-    color:#1b3461;
+    color:white;
 }
 
 .contact-col ul{
@@ -81,7 +82,7 @@
 }
 
 .contact-col ul li{
-    color: black;
+    color: white;
     margin: 20px 0;
     font-size: 17px;
     display: flex;
@@ -120,12 +121,30 @@
     border-radius: 12px;
     font-size: 16px;
     transition: all 0.3s ease;
+    color: #ffffff;
 }
 
 .contact form input:focus, .contact form textarea:focus{
     border-color: #581c87;
     background: rgba(235, 236, 254, 1);
     box-shadow: 0 4px 15px rgba(88, 28, 135, 0.15);
+}
+
+/* Make labels, placeholders and links inside contact white */
+.contact form label{
+    color: #ffffff;
+    display: block;
+    margin-top: 8px;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder{
+    color: rgba(255,255,255,0.85);
+}
+
+.contact-col a{
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .contact-col span{
@@ -135,8 +154,8 @@
 }
 
 .contact-col button.dark-btn {
-    background: #1b3461;
-    color: white;
+    background: white;
+    color: #1b3461;
     padding: 14px 35px;
     border: none;
     border-radius: 30px;
@@ -151,9 +170,9 @@
 }
 
 .contact-col button.dark-btn:hover {
-    background: #1b3461;
+    background: white;
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(88, 28, 135, 0.5);
+    box-shadow: 0 8px 30px rgba(149, 162, 255, 0.571);
 }
 
 .contact-col button.dark-btn:active {
