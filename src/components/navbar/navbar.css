@@ -45,8 +45,8 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background: rgba(255, 255, 255, 0.15);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(149, 162, 255, 0.571);
 }
 
 nav ul li a::after{
@@ -57,7 +57,7 @@ nav ul li a::after{
     transform: translateX(-50%) scaleX(0);
     width: 80%;
     height: 2px;
-    background: linear-gradient(90deg, #e0c3fc, #8ec5fc);
+    background: white;
     border-radius: 2px;
     transition: transform 0.3s ease;
 }
@@ -146,9 +146,9 @@ nav ul li a:hover::after{
     }
 
     nav ul li a:hover{
-        background: rgba(255, 255, 255, 0.1);
-        border-left-color: #8ec5fc;
-        padding-left: 20px;
+            background: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(149, 162, 255, 0.571);
     }
 
     .logo{
