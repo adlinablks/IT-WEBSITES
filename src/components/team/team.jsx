@@ -1,8 +1,8 @@
 import React from 'react'
 import './team.css'
-import adlina from '../../assets/adlina.jpeg'
+import adlina from '../../assets/adlina.jpg'
 import auni from '../../assets/Auni.jpg'
-import insyirah from '../../assets/insyirah.jpeg'
+import insyirah from '../../assets/insyirah.jpg'
 
 const Team = () => {
   return (
