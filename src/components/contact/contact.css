@@ -132,14 +132,14 @@
 
 /* Make labels, placeholders and links inside contact white */
 .contact form label{
-    color: #ffffff;
+    color: rgba(63, 103, 150, 0.85);
     display: block;
     margin-top: 8px;
 }
 
 .contact form input::placeholder,
 .contact form textarea::placeholder{
-    color: rgba(255,255,255,0.85);
+    color: rgba(63, 103, 150, 0.85);
 }
 
 .contact-col a{
