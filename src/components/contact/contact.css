@@ -125,12 +125,11 @@
 }
 
 .contact form input:focus, .contact form textarea:focus{
-    border-color: #581c87;
-    background: rgba(235, 236, 254, 1);
+    border-color: #1b3461;
+    background: rgb(95, 97, 140);
     box-shadow: 0 4px 15px rgba(88, 28, 135, 0.15);
 }
 
-/* Make labels, placeholders and links inside contact white */
 .contact form label{
     color: rgba(63, 103, 150, 0.85);
     display: block;
