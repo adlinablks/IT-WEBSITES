@@ -107,8 +107,8 @@ nav ul li a:hover::after{
         top: 0;
         bottom: 0;
         right: 0;
-        background: linear-gradient(135deg, rgba(33, 46, 160, 0.98), rgba(88, 28, 135, 0.98));
-        backdrop-filter: blur(20px);
+        background: #1b3461;
+        backdrop-filter: #1b3461;
         z-index: 120;
         width: 240px;
         padding-top: 100px;
