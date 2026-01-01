@@ -82,6 +82,40 @@ nav ul li a:hover::after{
     transform: rotate(90deg);
 }
 
+/* CSS hamburger button to replace image icon */
+.hamburger{
+    display: none;
+    background: #1b3461;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.hamburger span{
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: #fff;
+    border-radius: 3px;
+    transition: transform 0.25s ease, opacity 0.2s ease;
+}
+.hamburger span + span{
+    margin-top: 6px;
+}
+.hamburger.open span:nth-child(1){
+    transform: translateY(9px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2){
+    opacity: 0;
+}
+.hamburger.open span:nth-child(3){
+    transform: translateY(-9px) rotate(-45deg);
+}
+
 
 /*media query*/
 
@@ -101,6 +135,9 @@ nav ul li a:hover::after{
 @media (max-width: 840px){
     nav{
         padding: 12px 25px; 
+        background: #1b3461;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+        backdrop-filter: blur(8px);
     }
     nav ul {
         position: fixed;
@@ -167,8 +204,12 @@ nav ul li a:hover::after{
         z-index: 200;
     }
     
+    .hamburger{ display: inline-flex; }
+
     .hidemobilemenu{
-        transform: translateX(110%);
+        transform: translateX(105%);
+        opacity: 0;
+        visibility: hidden;
         pointer-events: none;
     }
 }
@@ -176,6 +217,8 @@ nav ul li a:hover::after{
 @media (max-width: 480px){
     nav{
         padding: 10px 20px;
+        background: #1b3461;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.12);
     }
     .logo{
         width: 60px;

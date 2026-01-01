@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './navbar.css'
 import logo from '../../assets/logo.png'
-import menuicon from '../../assets/menu-icon.png'
+// removed image menu icon in favor of CSS hamburger button
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
@@ -43,7 +43,15 @@ const Navbar = () => {
         <li><Link to='contact' smooth offset={-120} duration={500} className='btn'>Contact us</Link></li>
       </ul>
 
-      <img src={menuicon} alt="Menu" className='menuicon' onClick={toggleMenu}/>
+      <button
+        className={`hamburger ${mobilemenu ? 'open' : ''}`}
+        onClick={toggleMenu}
+        aria-label="Toggle menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
   )
 }
