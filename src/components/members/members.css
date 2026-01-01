@@ -40,6 +40,30 @@
     line-height: 1.4; 
 }
 
+/* Explore More button */
+.members-text .btn{
+    background: #ffffff;
+    color: #1b3461;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 25px rgba(11, 27, 58, 0.12);
+    cursor: pointer;
+}
+.members-text .btn img{
+    width: 18px;
+    height: auto;
+    filter: none;
+}
+.members-text .btn:hover{
+    transform: translateY(-3px);
+}
+
 /*media query*/
 
 @media(max-width:850px){

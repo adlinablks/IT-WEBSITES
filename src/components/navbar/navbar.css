@@ -18,12 +18,12 @@ nav{
     width: 90px;
     cursor: pointer;
     transition: transform 0.3s ease, filter 0.3s ease;
-    filter: drop-shadow(0 2px 8px rgba(169, 66, 40, 0.2));
+    filter: drop-shadow(0 2px 8px #1b3461);
 }
 
 .logo:hover{
     transform: scale(1.08) translateY(-2px);
-    filter: drop-shadow(0 4px 12px rgba(169, 66, 40, 0.4));
+    filter: drop-shadow(0 4px 12px #1b3461);
 }
 
 nav ul li{
@@ -45,7 +45,7 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background: rgba(201, 174, 132, 0.2);
+    background:#1b3461;
     transform: translateY(-2px);
 }
 
@@ -57,7 +57,7 @@ nav ul li a::after{
     transform: translateX(-50%) scaleX(0);
     width: 80%;
     height: 2px;
-    background: linear-gradient(90deg, #a94228, #c9ae84);
+    background: white;
     border-radius: 2px;
     transition: transform 0.3s ease;
 }
@@ -66,9 +66,19 @@ nav ul li a:hover::after{
     transform: translateX(-50%) scaleX(1);
 }
 
+/* Make .btn behave like other nav links (Team) */
+.btn{
+    background: transparent;
+    color: inherit;
+}
+.btn:hover{
+    background: #1b3461;
+    transform: translateY(-2px);
+}
+
 .dark-nav{
-    background: #445363;
-    box-shadow: 0 4px 20px rgba(169, 66, 40, 0.15);
+    background: #1b3461;
+    box-shadow: 0 4px 20px #1b3461;
     transition: all 0.5s ease;
     backdrop-filter: blur(15px);
 }
@@ -101,21 +111,22 @@ nav ul li a:hover::after{
 @media (max-width: 840px){
     nav{
         padding: 12px 25px;
-        background: #445363;
+        background: #1b3461 !important;
+        backdrop-filter: none !important;
     }
+    
     nav ul {
         position: fixed;
         top: 0;
         bottom: 0;
         right: 0px;
-        background: #445363;
-        backdrop-filter: none;
-        -webkit-backdrop-filter: none;
-        z-index: -1;
+        background: #1b3461 !important;
+        z-index: 100;
         width: 200px;
         padding-top: 80px;
-        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.5);
+        transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.8);
+        border-left: 1px solid #1b3461;
     }
 
     nav ul li{
@@ -125,6 +136,9 @@ nav ul li a:hover::after{
         font-size: 17px;
         opacity: 0;
         animation: fadeInMenu 0.5s ease forwards;
+        position: relative;
+        z-index: 1;
+        background: #1b3461;
     }
 
     nav ul li:nth-child(1) { animation-delay: 0.1s; }
@@ -145,12 +159,13 @@ nav ul li a:hover::after{
         display: block;
         border-left: 3px solid transparent;
         transition: all 0.3s ease;
-        background: transparent;
+        background: #1b3461;
+        color: #e5e8e1;
     }
 
     nav ul li a:hover{
-        background: rgba(201, 174, 132, 0.3);
-        border-left-color: #c9ae84;
+        background: #1b3461;
+        border-left-color: #84b4c9;
         padding-left: 20px;
     }
 
@@ -162,10 +177,12 @@ nav ul li a:hover::after{
         display: block;
         width: 28px;
         cursor: pointer;
+        position: relative;
+        z-index: 200;
     }
     
     .hidemobilemenu{
-        right: -200px;
+        right: -200px !important;
     }
 }
 
