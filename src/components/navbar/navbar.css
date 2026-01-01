@@ -1,7 +1,7 @@
 nav{
     width: 100%;
-    color: #fff;
-    padding: 0px 15px; 
+    color: #e5e8e1;
+    padding: 15px 40px; 
     position: fixed;
     top: 0;
     left: 0;
@@ -10,7 +10,7 @@ nav{
     justify-content: space-between;
     z-index: 15;
     backdrop-filter: blur(10px);
-    background: rgba(33, 46, 160, 0.05);
+    background: rgba(68, 83, 99, 0.1);
     transition: all 0.3s ease;
 }
 
@@ -18,12 +18,12 @@ nav{
     width: 90px;
     cursor: pointer;
     transition: transform 0.3s ease, filter 0.3s ease;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0 2px 8px rgba(169, 66, 40, 0.2));
 }
 
 .logo:hover{
     transform: scale(1.08) translateY(-2px);
-    filter: drop-shadow(0 4px 12px rgba(255, 255, 255, 0.3));
+    filter: drop-shadow(0 4px 12px rgba(169, 66, 40, 0.4));
 }
 
 nav ul li{
@@ -36,7 +36,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #fff;
+    color: #e5e8e1;
     text-decoration: none;
     transition: all 0.3s ease;
     padding: 8px 12px;
@@ -45,8 +45,8 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(149, 162, 255, 0.571);
+    background: rgba(201, 174, 132, 0.2);
+    transform: translateY(-2px);
 }
 
 nav ul li a::after{
@@ -57,7 +57,7 @@ nav ul li a::after{
     transform: translateX(-50%) scaleX(0);
     width: 80%;
     height: 2px;
-    background: white;
+    background: linear-gradient(90deg, #a94228, #c9ae84);
     border-radius: 2px;
     transition: transform 0.3s ease;
 }
@@ -67,8 +67,8 @@ nav ul li a:hover::after{
 }
 
 .dark-nav{
-    background: #1b3461;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: #445363;
+    box-shadow: 0 4px 20px rgba(169, 66, 40, 0.15);
     transition: all 0.5s ease;
     backdrop-filter: blur(15px);
 }
@@ -100,31 +100,29 @@ nav ul li a:hover::after{
 
 @media (max-width: 840px){
     nav{
-        padding: 12px 25px;
-        background: #1b3461;
+        padding: 12px 25px; 
     }
     nav ul {
         position: fixed;
         top: 0;
         bottom: 0;
-        right: 0;
-        background: #1b3461;
-        z-index: 120;
-        width: 240px;
-        padding-top: 100px;
-        transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        transform: translateX(0);
-        box-shadow: -8px 0 35px #1b3461;
-        text-align: center;
+        right: 0px;
+        background: #445363;
+        backdrop-filter: none;
+        z-index: -1;
+        width: 200px;
+        padding-top: 80px;
+        transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.3);
     }
 
     nav ul li{
         display: block;
-        margin: 20px 0;
-        padding: 0 20px;
-        font-size: 18px;
+        margin: 25px 0;
+        padding: 0 35px;
+        font-size: 17px;
         opacity: 0;
-        animation: fadeInMenu 0.45s ease forwards;
+        animation: fadeInMenu 0.5s ease forwards;
     }
 
     nav ul li:nth-child(1) { animation-delay: 0.1s; }
@@ -140,20 +138,17 @@ nav ul li a:hover::after{
     }
 
     nav ul li a{
-        font-size: 18px;
-        padding: 12px 16px;
+        font-size: 17px;
+        padding: 10px 15px;
         display: block;
-        border-left: none;
-        transition: background 0.25s ease, transform 0.18s ease;
-        color: #fff;
-        text-align: center;
-        border-radius: 999px;
+        border-left: 3px solid transparent;
+        transition: all 0.3s ease;
     }
 
     nav ul li a:hover{
-        background:#1b3461;
-        transform: translateY(0);
-        box-shadow: 0 8px 30px #1b3461;
+        background: rgba(201, 174, 132, 0.25);
+        border-left-color: #c9ae84;
+        padding-left: 20px;
     }
 
     .logo{
@@ -164,28 +159,24 @@ nav ul li a:hover::after{
         display: block;
         width: 28px;
         cursor: pointer;
-        z-index: 200;
     }
     
     .hidemobilemenu{
-        transform: translateX(110%);
-        pointer-events: none;
+        right: -200px;
     }
 }
 
 @media (max-width: 480px){
     nav{
         padding: 10px 20px;
-        background: #1b3461;
     }
     .logo{
         width: 60px;
     }
     nav ul{
-        width: 220px;
-        padding-top: 90px;
+        width: 180px;
     }
     .hidemobilemenu{
-        transform: translateX(120%);
+        right: -180px;
     }
 }
