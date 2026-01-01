@@ -151,9 +151,9 @@ nav ul li a:hover::after{
     }
 
     nav ul li a:hover{
-        background: rgba(255,255,255,0.12);
+        background:#1b3461;
         transform: translateY(0);
-        box-shadow: 0 8px 30px rgba(149, 162, 255, 0.16);
+        box-shadow: 0 8px 30px #1b3461;
     }
 
     .logo{
