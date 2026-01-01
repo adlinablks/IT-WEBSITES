@@ -114,7 +114,7 @@ nav ul li a:hover::after{
         padding-top: 100px;
         transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         transform: translateX(0);
-        box-shadow: -8px 0 35px rgba(0, 0, 0, 0.35);
+        box-shadow: -8px 0 35px #1b3461;
         text-align: center;
     }
 
