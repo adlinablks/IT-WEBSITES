@@ -100,7 +100,8 @@ nav ul li a:hover::after{
 
 @media (max-width: 840px){
     nav{
-        padding: 12px 25px; 
+        padding: 12px 25px;
+        background: #445363;
     }
     nav ul {
         position: fixed;
@@ -109,11 +110,12 @@ nav ul li a:hover::after{
         right: 0px;
         background: #445363;
         backdrop-filter: none;
+        -webkit-backdrop-filter: none;
         z-index: -1;
         width: 200px;
         padding-top: 80px;
         transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.3);
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.5);
     }
 
     nav ul li{
@@ -143,10 +145,11 @@ nav ul li a:hover::after{
         display: block;
         border-left: 3px solid transparent;
         transition: all 0.3s ease;
+        background: transparent;
     }
 
     nav ul li a:hover{
-        background: rgba(201, 174, 132, 0.25);
+        background: rgba(201, 174, 132, 0.3);
         border-left-color: #c9ae84;
         padding-left: 20px;
     }
