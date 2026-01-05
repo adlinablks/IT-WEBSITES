@@ -66,7 +66,6 @@ nav ul li a:hover::after{
     transform: translateX(-50%) scaleX(1);
 }
 
-/* Make .btn behave like other nav links (Team) */
 .btn{
     background: transparent;
     color: inherit;
