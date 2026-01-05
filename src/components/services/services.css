@@ -35,7 +35,7 @@
     bottom: 0;
     width: 100vw;
     transform: translateX(-50%);
-    background: white; /* Updated to requested blue */
+    background: white; 
     z-index: -1;
 }
 
